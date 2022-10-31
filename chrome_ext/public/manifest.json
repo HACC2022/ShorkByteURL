@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Shork Byte URL",
+    "description": "HI GOV: Shark Byte Hoo Ha Ha of your URLs",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "128.png"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

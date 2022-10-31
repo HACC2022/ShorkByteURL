@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shork Byte URL Admin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/128.png" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="limiter">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="pr-3">
+                <img src="assets/128.png" width="30" height="30" alt="">
+            </div>
+            <a class="login100-form-title navbar-brand" style="text-align: left;">Shork Byte URL</a>
+            <div class="container-login100-form-btn" id="logout_btn" style="width:fit-content;">
+                <button class="login100-form-btn">
+                Logout
+                </button>
+            </div>
+        </nav>
+        <div class="container-admin100">
+            <div class="wrap-admin100 p-t-50 p-b-50">
+                <h1 class="login100-form-title">Admin</h1>
+                <br>
+                <br>
+                <div class="container" style="align-content: center;">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="wrap-input100 m-b-16">
+                                <input class="input100 " type="text" id="url_field" placeholder="URL"></input>
+                                <span class="focus-input100"></span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <button class="login100-form-btn" id="compress_btn" style="width: 250px;">Compress URL</button>
+                        </div>
+                    </div>
+                </div>
+                <label class="label100">Short URL:</label>
+                <label class="label-url100" id="short_url_label"></label>
+                <br>
+                <br>
+
+                <table class="table table-striped" id="urlRequestsTable">
+                    <thead>
+                        <tr>
+                            <th colspan="3" scope="colgroup">Owner</th>
+                            <th colspan="2" scope="colgroup">Requester</th>
+                        </tr>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Department</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Timestamp</th>
+                            <th>Short URL</th>
+                            <th>Original URL</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="urlRequestsBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>
